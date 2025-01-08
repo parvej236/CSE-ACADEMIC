@@ -15,6 +15,10 @@ int main()
 // algorithm part starting 
 
     // selection sort
+     // time complexity
+    // best case: O(n2), worst case: O(n2), average case: O(n2)
+    // space complexity: O(1)
+
     // for(int i = 0; i < n - 1; i++) {
     //     int minIndex = i;
     //     for(int j = i + 1; j < n; j++) {
@@ -30,6 +34,9 @@ int main()
     // }
 
     // bubble sort
+     // time complexity
+    // best case: O(n), worst case: O(n2), average case: O(n2)
+    // space complexity: O(1)
     // for(int i=0;i<n-1;i++){
     //     for(int j=0;j<n;j++){
     //         if(ara[j]>ara[j+1]){
@@ -41,6 +48,9 @@ int main()
     // }
 
     // insertion sort
+     // time complexity
+    // best case: O(n), worst case: O(n2), average case: O(n2)
+    // space complexity: O(1)
     for (int i = 1; i < n; i++)
     {
         int key = ara[i];

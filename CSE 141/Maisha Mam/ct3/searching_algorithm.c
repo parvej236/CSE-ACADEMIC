@@ -20,6 +20,9 @@ int main()
 // algorithm part starting
 
     // linear search
+    // time complexity
+    // best case: O(1), worst case: O(n), average case: O(n)
+    // space complexity: O(1)
 
     // for(int i=0; i<n;i++){
     //     if(ara[i]==key){
@@ -29,6 +32,9 @@ int main()
     // }
 
     // binary search
+    // time complexity
+    // best case: O(1), worst case: O(log n), average case: O(log n)
+    // space complexity: O(1)
 
     int low = 0;
     int high = n - 1;
