@@ -5,8 +5,8 @@ int main()
     int n, row, col;
     scanf("%d", &n);
 
-    for(row = 1; row <= n; row++) {
-        for(col = row; col <= n; col++) {
+    for(row = 0; row < n; row++) {
+        for(col = row; col < n; col++) {
             printf("* ");
         }
         printf("\n");
