@@ -27,5 +27,10 @@ void main(){
     int n, r;
     scanf("%d %d", &n, &r);
 
-    printf("%dC%d: %d\n", n, r, nCr(n, r));
+    if(n>=r && n>=0 && r>=0){
+        printf("%dC%d: %d\n", n, r, nCr(n, r));
+    } else {
+        printf("Not possible!\n");
+    }
+    
 }
