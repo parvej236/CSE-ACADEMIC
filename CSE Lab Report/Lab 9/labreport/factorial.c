@@ -19,6 +19,4 @@ int main(){
     } else {
         printf("Not possible.\n");
     }
-
-    
 }
