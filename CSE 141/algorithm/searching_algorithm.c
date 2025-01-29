@@ -45,7 +45,7 @@ int main()
         mid = (high + low) / 2;
         if (ara[mid] == key)
         {
-            printf("find in index: %d\n", mid);
+            printf("find in index: %d\n", mid+1);
             found=1;
             break;
         }
@@ -63,7 +63,7 @@ int main()
 
     if (!found)
     {
-        printf("Key not found\n");
+        printf("-1\n");
     }
 
     return 0;
