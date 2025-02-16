@@ -45,12 +45,16 @@ int main()
     int rowSum[rows];
     int colSum[cols];
     printf("Enter the elements:\n");
+
+    for(int i=0;i<cols;i++){
+        colSum[i]=0;
+    }
+
     for (int i = 0; i < rows; i++)
     {
         rowSum[i]=0;
         for (int j = 0; j < cols; j++)
         {
-            colSum[i]=0;
             scanf("%d", &matrix[i][j]);
         }
     }

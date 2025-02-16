@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main() {
     int rows, cols;
@@ -15,7 +16,7 @@ int main() {
         }
     }
 
-    int largest = arr[0][0], secondLargest = -214783648;
+    int largest = INT_MIN, secondLargest = INT_MIN;
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -28,7 +29,7 @@ int main() {
         }
     }
     
-    if (secondLargest == 0 && largest != 0) {
+    if (secondLargest == INT_MIN) {
         printf("No second largest element.\n");
     } else {
         printf("Second largest element is: %d\n", secondLargest);

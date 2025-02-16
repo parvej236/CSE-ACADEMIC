@@ -1,10 +1,15 @@
 #include <stdio.h>
-#define N 5
+#include <limits.h>
 
 int main() {
     int n;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
+
+    if (n < 2) {
+        printf("Array must have at least two elements.\n");
+        return 1;
+    }
 
     int ara[n];
 
@@ -13,10 +18,9 @@ int main() {
         scanf("%d", &ara[i]);
     }
 
-    int largest = ara[0];
-    int sLargest = -1;
-
-    for (int i = 1; i < n; i++) {
+    int largest = INT_MIN, sLargest = INT_MIN;
+     
+    for (int i = 0; i < n; i++) {
         if (ara[i] > largest) {
             sLargest = largest;
             largest = ara[i];
@@ -24,8 +28,8 @@ int main() {
             sLargest = ara[i];
         }
     }
-
-    if (sLargest == -1) {
+     
+    if (sLargest == INT_MIN) {
         printf("There is no second largest element.\n");
     } else {
         printf("Largest: %d\n", largest);

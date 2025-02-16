@@ -37,15 +37,15 @@ int main()
      // time complexity
     // best case: O(n), worst case: O(n2), average case: O(n2)
     // space complexity: O(1)
-    // for(int i=0;i<n-1;i++){
-    //     for(int j=0;j<n;j++){
-    //         if(ara[j]>ara[j+1]){
-    //             int tmp = ara[j];
-    //             ara[j] = ara[j+1];
-    //             ara[j+1]=tmp;
-    //         }
-    //     }
-    // }
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-i-1;j++){
+            if(ara[j]>ara[j+1]){
+                int tmp = ara[j];
+                ara[j] = ara[j+1];
+                ara[j+1]=tmp;
+            }
+        }
+    }
 
     // insertion sort
      // time complexity
