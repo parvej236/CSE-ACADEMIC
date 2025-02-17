@@ -56,5 +56,6 @@ int main() {
         printf("The number %d is not found in the array.\n", key);
     }
 
+
     return 0;
 }

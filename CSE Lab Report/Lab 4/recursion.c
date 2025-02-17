@@ -4,9 +4,7 @@ int sum(int k);
 
 int main() {
     int result = sum(10);
-    printf("%d\n", result);
-
-    
+    printf("%d\n", result);    
     return 0;
 }
 

@@ -21,9 +21,17 @@ int main(){
     // scanf("%[^\n]", ara);
     // printf("%s\n", ara);
 
-    char ara[80];
-    gets(ara);
+    char str[80];
+    // gets(str);
+    // scanf("%s", str);
+    // scanf("%[a-z]",str);
 
-    printf("%.4s\n", ara);
+    float x = 98.7654;
+    printf("%f\n", x);
+    printf("%11.4e\n", x);
+    printf("%e\n", x);
+
+
+    // printf("%s\n", str);
 
 }

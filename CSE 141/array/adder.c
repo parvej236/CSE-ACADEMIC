@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int adder(int *ara, int n){
+int adder(int ara[], int n){
     int sum = 0;
     for(int i=0;i<n;i++){
         sum+= ara[i];

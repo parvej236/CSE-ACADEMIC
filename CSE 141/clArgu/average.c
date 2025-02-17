@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     double average = (double)sum / count;
 
     // Print the average
-    printf("The average of the given integers is: %.2f\n", average);
+    printf("The average of the given integers is: %.2lf\n", average);
 
     return 0;
 }

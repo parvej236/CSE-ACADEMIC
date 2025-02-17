@@ -5,12 +5,12 @@ int main() {
     int *p, **q;
     p = &i;
     q = &p;
-    printf("%d", q);
-    printf("%d", *p);
-    printf("%d", **q);
-    printf("%d", *q);
-    printf("%d", p);
-    printf("%d", &q);
+    printf("%d\n", q); // adress of p
+    printf("%d\n", *p); // 10
+    printf("%d\n", **q); // 10
+    printf("%d\n", *q); // adress of i
+    printf("%d\n", p); // adress of i
+    printf("%d\n", &q); // adress of q
 
     return 0;
 }

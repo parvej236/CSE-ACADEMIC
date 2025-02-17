@@ -10,6 +10,7 @@ int main(){
 
     if(result != NULL) {
         printf("Starting at : %s\n", result);
+        printf("found at : %d\n", result-str1);
     } else {
         printf("not found!\n");
     }
