@@ -1,9 +1,0 @@
-# Ignore everything
-*
-
-# Do not ignore directories
-!*/
-
-# Do not ignore .c and .txt files
-!*.c
-!*.txt
