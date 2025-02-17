@@ -6,11 +6,12 @@ int main() {
     scanf("%d", &n);
 
     int dec = 0;
-    int base = 1;
+    int i = 1;
 
     while (n != 0) {
-        dec += (n%10) * base;
-        base *= 2;
+        int r = n % 10;
+        dec = dec + r * i;
+        i *= 2;
         n /= 10;
     }
 

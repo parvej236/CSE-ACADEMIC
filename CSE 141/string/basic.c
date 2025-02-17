@@ -26,12 +26,6 @@ int main(){
     // scanf("%s", str);
     // scanf("%[a-z]",str);
 
-    float x = 98.7654;
-    printf("%f\n", x);
-    printf("%11.4e\n", x);
-    printf("%e\n", x);
-
-
     // printf("%s\n", str);
 
 }

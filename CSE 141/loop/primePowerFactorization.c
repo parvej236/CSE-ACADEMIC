@@ -1,43 +1,25 @@
 #include <stdio.h>
 
 void primeFactorization(int n) {
-    int count = 0;
-    int first = 1; // To manage formatting for the first factor
+    int first = 1; // To manage "x" formatting
 
-    // Handle the factor of 2
-    while (n % 2 == 0) {
-        count++;
-        n /= 2;
-    }
-    if (count > 0) {
-        if (!first) {
-            printf(" x ");
-        }
-        printf("2^%d", count);
-        first = 0; // Set first to false after printing the first factor
-    }
-
-    // Handle odd factors from 3 onwards
-    for (int i = 3; i * i <= n; i += 2) {
-        count = 0;
+    // Check all possible factors
+    for (int i = 2; i * i <= n; i++) {
+        int count = 0;
         while (n % i == 0) {
             count++;
             n /= i;
         }
         if (count > 0) {
-            if (!first) {
-                printf(" x ");
-            }
+            if (!first) printf(" x ");
             printf("%d^%d", i, count);
-            first = 0; // Set first to false after printing the first factor
+            first = 0; // Set first to false after the first factor
         }
     }
 
-    // If n is still greater than 2, it must be a prime number
-    if (n > 2) {
-        if (!first) {
-            printf(" x ");
-        }
+    // If any prime factor > sqrt(n) remains
+    if (n > 1) {
+        if (!first) printf(" x ");
         printf("%d^1", n);
     }
 }

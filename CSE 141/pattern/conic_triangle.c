@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n = 7;
+    int n = 5;
 
     // Upper half including middle row
     for (int i = 0; i < (n / 2) + 1; i++) {
