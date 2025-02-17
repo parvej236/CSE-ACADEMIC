@@ -2,21 +2,19 @@
 
 int main()
 {
-    int n = 8;
+    int n = 5;
 
     for (int i = 0; i < n; i++)
     {
-         for (int j = i; j<n;j++)
-        {
-            printf(" ");
-         
-        }
-
         for (int j = 0; j < n; j++)
         {
-            printf("* ");
-            
+            if(i>=j){
+                printf("%d ", n -j);
+            } else {
+                printf("%d ", n - i);
+            }
         }
+
         printf("\n");
     }
 }

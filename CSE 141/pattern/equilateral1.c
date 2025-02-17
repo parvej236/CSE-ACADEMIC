@@ -2,11 +2,11 @@
 
 int main()
 {
-    int row = 5, col = 5;
+    int n = 5;
 
-    for (int i = 1; i <= row; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int j=1;j<=(col-i);j++)
+        for (int j=i;j<n;j++)
         {
             printf("   ");
         }
@@ -15,9 +15,9 @@ int main()
         {
             if (i>=j)
             {
-                printf("%d  ", j);
+                printf("%3d", j);
             } else {
-                printf("%d  ", (2*i-j));
+                printf("%3d", (2*i-j));
             }
         }
 
