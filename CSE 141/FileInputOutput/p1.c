@@ -3,7 +3,6 @@
 int main(){
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
-
     int n;
     scanf("%d", &n);
     float cst[n], tst[n];
@@ -17,4 +16,5 @@ int main(){
         }
     }
     printf("%.2f\n", cst[idx]);
+
 }

@@ -21,7 +21,7 @@ int main(){
       char ch;
     // Read characters until EOF
     while (scanf("%c", &ch) == 1) {
-        printf("%c", ch);
+        printf("%c\n", ch);
     }
 
     fclose(stdin);
