@@ -2,9 +2,7 @@
 
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    printf("\n");
+    int n = 5;
     
     for (int i = 0; i < n; i++)
     {

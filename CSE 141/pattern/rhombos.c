@@ -2,17 +2,17 @@
 
 int main()
 {
-    int row = 8, col = 8;
+    int n = 8;
 
-    for (int i = 1; i <= row; i++)
+    for (int i = 1; i <= n; i++)
     {
-         for (int j = row; j>i;j--)
+         for (int j = 1; j<=(n-i);j++)
         {
             printf(" ");
          
         }
 
-        for (int j = 1; j <= col; j++)
+        for (int j = 1; j <= n; j++)
         {
             printf("* ");
             

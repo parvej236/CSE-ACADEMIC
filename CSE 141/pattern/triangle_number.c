@@ -6,14 +6,14 @@ int main()
 
     for (int i = 1; i <= row; i++)
     {
-        for (int j = (row - i); j > 0; j--)
+        for (int j=1;j<=(col-i);j++)
         {
             printf("   ");
         }
 
         for (int j = 1; j <= (2 * i - 1); j++)
         {
-            if (j <= i)
+            if (i>=j)
             {
                 printf("%d  ", j);
             } else {
